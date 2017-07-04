@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Process Demonizator :: CommandLine Interface")]
-[assembly: AssemblyDescription("Process Demonizator :: CommandLine Interface")]
+[assembly: AssemblyTitle("EpicMorg Supervisor :: CommandLine Interface")]
+[assembly: AssemblyDescription("EpicMorg Supervisor :: CommandLine Interface")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EpicMorg")]
-[assembly: AssemblyProduct("Process Demonizator :: CommandLine Interface")]
-[assembly: AssemblyCopyright("Copyright © EpicMorg 2015")]
+[assembly: AssemblyProduct("EpicMorg Supervisor :: CommandLine Interface")]
+[assembly: AssemblyCopyright("Copyright © EpicMorg 2017")]
 [assembly: AssemblyTrademark("EpicMorg")]
 [assembly: AssemblyCulture("")]
 

@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Process Demonizator :: Client Panel")]
-[assembly: AssemblyDescription("Process Demonizator :: Client Panel")]
+[assembly: AssemblyTitle("EpicMorg Supervisor :: Client Panel")]
+[assembly: AssemblyDescription("EpicMorg Supervisor :: Client Panel")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EpicMorg")]
-[assembly: AssemblyProduct("Process Demonizator :: Client Panel")]
-[assembly: AssemblyCopyright("Copyright © EpicMorg 2015")]
+[assembly: AssemblyProduct("EpicMorg Supervisor :: Client Panel")]
+[assembly: AssemblyCopyright("Copyright © EpicMorg 2017")]
 [assembly: AssemblyTrademark("EpicMorg")]
 [assembly: AssemblyCulture("")]
 

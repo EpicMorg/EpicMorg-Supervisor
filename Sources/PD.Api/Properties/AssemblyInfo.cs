@@ -4,13 +4,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PD.Api")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("EpicMorg Supervisor :: API Library")]
+[assembly: AssemblyDescription("EpicMorg Supervisor :: API Library")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PD.Api")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("EpicMorg")]
+[assembly: AssemblyProduct("EpicMorg Supervisor :: API")]
+[assembly: AssemblyCopyright("Copyright © EpicMorg  2017")]
+[assembly: AssemblyTrademark("EpicMorg")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
