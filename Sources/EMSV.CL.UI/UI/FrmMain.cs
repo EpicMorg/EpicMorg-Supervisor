@@ -41,7 +41,7 @@ namespace EMSV.CL.UI.UI {
             }
         }
 
-        private void smenuLicense_Click( object sender, EventArgs e ) => InfoHelper.ShowLicense();
+        private void smenuLicense_Click(object sender, EventArgs e) => new FrmLicense().ShowDialog();
 
         private void smenuAbout_Click( object sender, EventArgs e ) => new FrmAbout().ShowDialog();
 

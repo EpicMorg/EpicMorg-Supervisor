@@ -63,6 +63,16 @@ namespace EMSV.UI.Shared.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asterisk_red {
+            get {
+                object obj = ResourceManager.GetObject("asterisk_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gksu_root_terminal {
             get {
                 object obj = ResourceManager.GetObject("gksu_root_terminal", resourceCulture);

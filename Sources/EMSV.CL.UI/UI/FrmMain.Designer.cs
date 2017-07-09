@@ -33,20 +33,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.tabItems = new System.Windows.Forms.TabPage();
             this.dgvProcessList = new System.Windows.Forms.DataGridView();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this._notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.cmProcess = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmUnlock = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.imageListMain = new System.Windows.Forms.ImageList(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDemonizedProcessBaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.imageListMain = new System.Windows.Forms.ImageList(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this._notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.smenuStartMonitorServer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -56,19 +50,24 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.smenuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.smenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.smenuLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.smenuAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.unlockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmProcess = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmUnlock = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.unlockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).BeginInit();
             this.tabControl.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.cmProcess.SuspendLayout();
             this.cmUnlock.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabItems
@@ -102,6 +101,25 @@
             this.dgvProcessList.TabIndex = 0;
             this.dgvProcessList.DataSourceChanged += new System.EventHandler(this.dgvProcessList_DataSourceChanged_1);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iDemonizedProcessBaseBindingSource
+            // 
+            this.iDemonizedProcessBaseBindingSource.DataSource = typeof(EMSV.Api.DataTypes.IDemonizedProcessBase);
+            // 
             // tabControl
             // 
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -115,6 +133,20 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(872, 463);
             this.tabControl.TabIndex = 6;
+            // 
+            // imageListMain
+            // 
+            this.imageListMain.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMain.ImageStream")));
+            this.imageListMain.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListMain.Images.SetKeyName(0, "database_yellow.png");
+            this.imageListMain.Images.SetKeyName(1, "arrow_switch_bluegreen.png");
+            this.imageListMain.Images.SetKeyName(2, "page_header_footer.png");
+            this.imageListMain.Images.SetKeyName(3, "rainbow_star.png");
+            this.imageListMain.Images.SetKeyName(4, "text_complete.png");
+            this.imageListMain.Images.SetKeyName(5, "arrow_switch_bluegreen.png");
+            this.imageListMain.Images.SetKeyName(6, "bullet_cross.png");
+            this.imageListMain.Images.SetKeyName(7, "font_color.png");
+            this.imageListMain.Images.SetKeyName(8, "house_connect.png");
             // 
             // statusStrip1
             // 
@@ -141,89 +173,6 @@
             this.menuStrip.TabIndex = 4;
             this.menuStrip.Text = "menuStrip1";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // cmProcess
-            // 
-            this.cmProcess.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.startToolStripMenuItem,
-            this.restartToolStripMenuItem,
-            this.stopToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.infoToolStripMenuItem});
-            this.cmProcess.Name = "cmProcess";
-            this.cmProcess.Size = new System.Drawing.Size(153, 120);
-            // 
-            // startToolStripMenuItem
-            // 
-            this.startToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.play_green;
-            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.startToolStripMenuItem.Text = "Start";
-            this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
-            // 
-            // restartToolStripMenuItem
-            // 
-            this.restartToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.reload;
-            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.restartToolStripMenuItem.Text = "Restart";
-            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
-            // 
-            // stopToolStripMenuItem
-            // 
-            this.stopToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.stop_red;
-            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.stopToolStripMenuItem.Text = "Stop";
-            this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
-            // 
-            // infoToolStripMenuItem
-            // 
-            this.infoToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.eyes;
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.infoToolStripMenuItem.Text = "Info";
-            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
-            // 
-            // cmUnlock
-            // 
-            this.cmUnlock.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.unlockToolStripMenuItem});
-            this.cmUnlock.Name = "cmUnlock";
-            this.cmUnlock.Size = new System.Drawing.Size(112, 26);
-            // 
-            // imageListMain
-            // 
-            this.imageListMain.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMain.ImageStream")));
-            this.imageListMain.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListMain.Images.SetKeyName(0, "database_yellow.png");
-            this.imageListMain.Images.SetKeyName(1, "arrow_switch_bluegreen.png");
-            this.imageListMain.Images.SetKeyName(2, "page_header_footer.png");
-            this.imageListMain.Images.SetKeyName(3, "rainbow_star.png");
-            this.imageListMain.Images.SetKeyName(4, "text_complete.png");
-            this.imageListMain.Images.SetKeyName(5, "arrow_switch_bluegreen.png");
-            this.imageListMain.Images.SetKeyName(6, "bullet_cross.png");
-            this.imageListMain.Images.SetKeyName(7, "font_color.png");
-            this.imageListMain.Images.SetKeyName(8, "house_connect.png");
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iDemonizedProcessBaseBindingSource
-            // 
-            this.iDemonizedProcessBaseBindingSource.DataSource = typeof(EMSV.Api.DataTypes.IDemonizedProcessBase);
             // 
             // menuFile
             // 
@@ -293,7 +242,6 @@
             // menuHelp
             // 
             this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.smenuHelp,
             this.smenuLicense,
             this.toolStripSeparator3,
             this.smenuAbout});
@@ -302,34 +250,81 @@
             this.menuHelp.Size = new System.Drawing.Size(60, 20);
             this.menuHelp.Text = "Help";
             // 
-            // smenuHelp
-            // 
-            this.smenuHelp.Enabled = false;
-            this.smenuHelp.Image = global::EMSV.CL.UI.Properties.Resources.shield_rainbow;
-            this.smenuHelp.Name = "smenuHelp";
-            this.smenuHelp.Size = new System.Drawing.Size(113, 22);
-            this.smenuHelp.Text = "Help";
-            // 
             // smenuLicense
             // 
             this.smenuLicense.Image = global::EMSV.CL.UI.Properties.Resources.rainbow_star;
             this.smenuLicense.Name = "smenuLicense";
-            this.smenuLicense.Size = new System.Drawing.Size(113, 22);
+            this.smenuLicense.Size = new System.Drawing.Size(152, 22);
             this.smenuLicense.Text = "License";
             this.smenuLicense.Click += new System.EventHandler(this.smenuLicense_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(110, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // smenuAbout
             // 
             this.smenuAbout.Image = global::EMSV.CL.UI.Properties.Resources.user_gray_cool;
             this.smenuAbout.Name = "smenuAbout";
-            this.smenuAbout.Size = new System.Drawing.Size(113, 22);
+            this.smenuAbout.Size = new System.Drawing.Size(152, 22);
             this.smenuAbout.Text = "About";
             this.smenuAbout.Click += new System.EventHandler(this.smenuAbout_Click);
+            // 
+            // cmProcess
+            // 
+            this.cmProcess.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startToolStripMenuItem,
+            this.restartToolStripMenuItem,
+            this.stopToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.infoToolStripMenuItem});
+            this.cmProcess.Name = "cmProcess";
+            this.cmProcess.Size = new System.Drawing.Size(111, 98);
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.play_green;
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.startToolStripMenuItem.Text = "Start";
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
+            // 
+            // restartToolStripMenuItem
+            // 
+            this.restartToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.reload;
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
+            // 
+            // stopToolStripMenuItem
+            // 
+            this.stopToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.stop_red;
+            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.stopToolStripMenuItem.Text = "Stop";
+            this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(107, 6);
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.eyes;
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            // 
+            // cmUnlock
+            // 
+            this.cmUnlock.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.unlockToolStripMenuItem});
+            this.cmUnlock.Name = "cmUnlock";
+            this.cmUnlock.Size = new System.Drawing.Size(112, 26);
             // 
             // unlockToolStripMenuItem
             // 
@@ -338,11 +333,6 @@
             this.unlockToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.unlockToolStripMenuItem.Text = "Unlock";
             this.unlockToolStripMenuItem.Click += new System.EventHandler(this.unlockToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
             // 
             // FrmMain
             // 
@@ -361,12 +351,12 @@
             this.Resize += new System.EventHandler(this.FormForTray_Resize);
             this.tabItems.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.cmProcess.ResumeLayout(false);
             this.cmUnlock.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +369,6 @@
         private System.Windows.Forms.NotifyIcon _notifyIcon;
         private System.Windows.Forms.ToolStripMenuItem smenuAbout;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem smenuHelp;
         private System.Windows.Forms.ToolStripMenuItem menuHelp;
         private System.Windows.Forms.ToolStripMenuItem smenuLicense;
         private System.Windows.Forms.ToolStripMenuItem smenuExit;

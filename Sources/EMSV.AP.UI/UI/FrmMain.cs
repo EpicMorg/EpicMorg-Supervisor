@@ -17,7 +17,7 @@ namespace EMSV.UI {
         public FrmMain() {
             InitializeComponent();
             Text = InfoHelper.NameVersion + " - Admin Panel";
-            _notifyIcon.Text = InfoHelper.NameVersion;
+            _notifyIcon.Text = InfoHelper.NameVersion + " - Admin Panel";
             dgvProcessList.AutoGenerateColumns = false;
         }
 
@@ -81,7 +81,7 @@ namespace EMSV.UI {
 
         private void smenuAbout_Click( object sender, EventArgs e ) => new FrmAbout().ShowDialog();
 
-        private void smenuLicense_Click( object sender, EventArgs e ) => InfoHelper.ShowLicense();
+        private void smenuLicense_Click(object sender, EventArgs e) => new FrmLicense().ShowDialog();
 
         private void FrmMain_Resize( object sender, EventArgs e ) {
             if ( FormWindowState.Minimized == WindowState )

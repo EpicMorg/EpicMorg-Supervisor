@@ -37,14 +37,13 @@ namespace EMSV.UI
             this.txtProgCopy = new System.Windows.Forms.Label();
             this.lnkHP = new System.Windows.Forms.LinkLabel();
             this.lnkGH = new System.Windows.Forms.LinkLabel();
-            this.lblLib = new System.Windows.Forms.LinkLabel();
             this.btnOK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // picLogo
             // 
-            this.picLogo.Image = Resources.gksu_root_terminal;
+            this.picLogo.Image = global::EMSV.UI.Shared.Properties.Resources.gksu_root_terminal;
             this.picLogo.Location = new System.Drawing.Point(12, 12);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(48, 48);
@@ -85,7 +84,7 @@ namespace EMSV.UI
             // lnkHP
             // 
             this.lnkHP.AutoSize = true;
-            this.lnkHP.Location = new System.Drawing.Point(9, 69);
+            this.lnkHP.Location = new System.Drawing.Point(9, 75);
             this.lnkHP.Name = "lnkHP";
             this.lnkHP.Size = new System.Drawing.Size(60, 13);
             this.lnkHP.TabIndex = 2;
@@ -96,7 +95,7 @@ namespace EMSV.UI
             // lnkGH
             // 
             this.lnkGH.AutoSize = true;
-            this.lnkGH.Location = new System.Drawing.Point(75, 69);
+            this.lnkGH.Location = new System.Drawing.Point(86, 75);
             this.lnkGH.Name = "lnkGH";
             this.lnkGH.Size = new System.Drawing.Size(40, 13);
             this.lnkGH.TabIndex = 2;
@@ -104,20 +103,9 @@ namespace EMSV.UI
             this.lnkGH.Text = "GitHub";
             this.lnkGH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // lblLib
-            // 
-            this.lblLib.AutoSize = true;
-            this.lblLib.Location = new System.Drawing.Point(121, 69);
-            this.lblLib.Name = "lblLib";
-            this.lblLib.Size = new System.Drawing.Size(94, 13);
-            this.lblLib.TabIndex = 3;
-            this.lblLib.TabStop = true;
-            this.lblLib.Text = "ipaddresscontrollib";
-            this.lblLib.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(240, 59);
+            this.btnOK.Location = new System.Drawing.Point(240, 65);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 4;
@@ -131,7 +119,6 @@ namespace EMSV.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 100);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.lblLib);
             this.Controls.Add(this.lnkGH);
             this.Controls.Add(this.lnkHP);
             this.Controls.Add(this.txtProgCopy);
@@ -161,7 +148,6 @@ namespace EMSV.UI
         private System.Windows.Forms.Label txtProgCopy;
         private System.Windows.Forms.LinkLabel lnkHP;
         private System.Windows.Forms.LinkLabel lnkGH;
-        private System.Windows.Forms.LinkLabel lblLib;
         private System.Windows.Forms.Button btnOK;
     }
 }
