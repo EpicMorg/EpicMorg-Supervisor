@@ -32,12 +32,13 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ipAddressText = new IPAddressControlLib.IPAddressControl();
-            this.txtServer = new System.Windows.Forms.TextBox();
             this.txtKey = new System.Windows.Forms.TextBox();
             this.lblPl = new System.Windows.Forms.Label();
-            this.lblSl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblSl = new System.Windows.Forms.Label();
+            this.txtServer = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOk
@@ -52,9 +53,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtServer);
             this.groupBox1.Controls.Add(this.ipAddressText);
             this.groupBox1.Controls.Add(this.btnOk);
-            this.groupBox1.Controls.Add(this.txtServer);
             this.groupBox1.Controls.Add(this.txtKey);
             this.groupBox1.Controls.Add(this.lblPl);
             this.groupBox1.Controls.Add(this.label1);
@@ -82,14 +83,6 @@
             this.ipAddressText.Text = "127.0.0.1";
             this.ipAddressText.TextChanged += new System.EventHandler(this.ipAddressText_TextChanged);
             // 
-            // txtServer
-            // 
-            this.txtServer.Location = new System.Drawing.Point(174, 32);
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(75, 20);
-            this.txtServer.TabIndex = 4;
-            this.txtServer.Text = "31337";
-            // 
             // txtKey
             // 
             this.txtKey.Location = new System.Drawing.Point(6, 71);
@@ -108,6 +101,15 @@
             this.lblPl.TabIndex = 1;
             this.lblPl.Text = "Passphrase:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(171, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Port:";
+            // 
             // lblSl
             // 
             this.lblSl.AutoSize = true;
@@ -117,14 +119,22 @@
             this.lblSl.TabIndex = 1;
             this.lblSl.Text = "IP:";
             // 
-            // label1
+            // txtServer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(171, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Port:";
+            this.txtServer.Location = new System.Drawing.Point(174, 32);
+            this.txtServer.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(75, 20);
+            this.txtServer.TabIndex = 7;
+            this.txtServer.Value = new decimal(new int[] {
+            31337,
+            0,
+            0,
+            0});
             // 
             // FrmStartHm
             // 
@@ -144,6 +154,7 @@
             this.Load += new System.EventHandler(this.FrmStartHm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,8 +165,8 @@
         private System.Windows.Forms.TextBox txtKey;
         private System.Windows.Forms.Label lblPl;
         private System.Windows.Forms.Label lblSl;
-        private System.Windows.Forms.TextBox txtServer;
         private System.Windows.Forms.Label label1;
         public IPAddressControlLib.IPAddressControl ipAddressText;
+        private System.Windows.Forms.NumericUpDown txtServer;
     }
 }

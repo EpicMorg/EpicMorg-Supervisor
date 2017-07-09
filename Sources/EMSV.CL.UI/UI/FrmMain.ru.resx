@@ -284,42 +284,6 @@
         AAA=
 </value>
   </data>
-  <data name="smenuAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 6</value>
-  </data>
-  <data name="smenuHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="smenuLicense.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="smenuExit.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="smenuStartMonitorServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 22</value>
-  </data>
-  <data name="smenuStartMonitorServer.Text" xml:space="preserve">
-    <value>Подключиться</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Язык</value>
-  </data>
-  <data name="menuFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="menuFile.Text" xml:space="preserve">
-    <value>Файл</value>
-  </data>
-  <data name="английскийToolStripMenuItem.Text" xml:space="preserve">
-    <value>Английский</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Русский</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAAOwGAADsBgAAAAAAAAAA
@@ -485,9 +449,5 @@
         AAAAAQAAgAAAAAABAACAAAAAAAEAAIAAAAAAAQAAwAAAAAADAADgAAAAAAcAAP///////wAA////////
         AAA=
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

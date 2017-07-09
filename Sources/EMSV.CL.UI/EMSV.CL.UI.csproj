@@ -120,6 +120,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gksu_root_terminal.ico" />
+    <None Include="Resources\united-kingdom.png" />
+    <None Include="Resources\russia.png" />
+    <None Include="Resources\rainbow_star.png" />
+    <None Include="Resources\user_gray_cool.png" />
+    <None Include="Resources\shield_rainbow.png" />
+    <None Include="Resources\page_header_footer.png" />
+    <None Include="Resources\world_connect.png" />
+    <None Include="Resources\text_complete.png" />
+    <None Include="Resources\bullet_cross.png" />
+    <None Include="Resources\house_connect.png" />
+    <None Include="Resources\font_color.png" />
+    <None Include="Resources\arrow_switch_bluegreen.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EMSV.Api.Client\EMSV.Api.Client.csproj">

@@ -77,6 +77,7 @@
             this.runningDemonizedProcessBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabLogs = new System.Windows.Forms.TabPage();
             this.txtLogs = new System.Windows.Forms.TextBox();
+            this.imageListMain = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -270,6 +271,7 @@
             this.tabControl.Controls.Add(this.tabItems);
             this.tabControl.Controls.Add(this.tabLogs);
             this.tabControl.Enabled = false;
+            this.tabControl.ImageList = this.imageListMain;
             this.tabControl.Location = new System.Drawing.Point(12, 27);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -280,10 +282,11 @@
             // tabItems
             // 
             this.tabItems.Controls.Add(this.dgvProcessList);
-            this.tabItems.Location = new System.Drawing.Point(4, 22);
+            this.tabItems.ImageKey = "database_yellow.png";
+            this.tabItems.Location = new System.Drawing.Point(4, 23);
             this.tabItems.Name = "tabItems";
             this.tabItems.Padding = new System.Windows.Forms.Padding(3);
-            this.tabItems.Size = new System.Drawing.Size(1064, 457);
+            this.tabItems.Size = new System.Drawing.Size(1064, 456);
             this.tabItems.TabIndex = 0;
             this.tabItems.Text = "Items";
             this.tabItems.UseVisualStyleBackColor = true;
@@ -312,7 +315,7 @@
             this.dgvProcessList.Name = "dgvProcessList";
             this.dgvProcessList.ReadOnly = true;
             this.dgvProcessList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProcessList.Size = new System.Drawing.Size(1058, 451);
+            this.dgvProcessList.Size = new System.Drawing.Size(1058, 450);
             this.dgvProcessList.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -462,10 +465,11 @@
             // tabLogs
             // 
             this.tabLogs.Controls.Add(this.txtLogs);
-            this.tabLogs.Location = new System.Drawing.Point(4, 22);
+            this.tabLogs.ImageKey = "page_header_footer.png";
+            this.tabLogs.Location = new System.Drawing.Point(4, 23);
             this.tabLogs.Name = "tabLogs";
             this.tabLogs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLogs.Size = new System.Drawing.Size(1064, 457);
+            this.tabLogs.Size = new System.Drawing.Size(1064, 456);
             this.tabLogs.TabIndex = 1;
             this.tabLogs.Text = "Logs";
             this.tabLogs.UseVisualStyleBackColor = true;
@@ -480,8 +484,22 @@
             this.txtLogs.Name = "txtLogs";
             this.txtLogs.ReadOnly = true;
             this.txtLogs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLogs.Size = new System.Drawing.Size(1052, 445);
+            this.txtLogs.Size = new System.Drawing.Size(1052, 444);
             this.txtLogs.TabIndex = 0;
+            // 
+            // imageListMain
+            // 
+            this.imageListMain.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMain.ImageStream")));
+            this.imageListMain.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListMain.Images.SetKeyName(0, "database_yellow.png");
+            this.imageListMain.Images.SetKeyName(1, "arrow_switch_bluegreen.png");
+            this.imageListMain.Images.SetKeyName(2, "page_header_footer.png");
+            this.imageListMain.Images.SetKeyName(3, "rainbow_star.png");
+            this.imageListMain.Images.SetKeyName(4, "text_complete.png");
+            this.imageListMain.Images.SetKeyName(5, "arrow_switch_bluegreen.png");
+            this.imageListMain.Images.SetKeyName(6, "bullet_cross.png");
+            this.imageListMain.Images.SetKeyName(7, "font_color.png");
+            this.imageListMain.Images.SetKeyName(8, "house_connect.png");
             // 
             // FrmMain
             // 
@@ -565,6 +583,7 @@
         private System.Windows.Forms.ToolStripMenuItem russianToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel statusServer;
+        private System.Windows.Forms.ImageList imageListMain;
     }
 }
 
