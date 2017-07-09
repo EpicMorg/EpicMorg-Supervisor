@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Web.Http;
-using PD.Api;
-using PD.Api.DataTypes;
-using PD.CLI.CORE.Core;
+using EMSV.Api;
+using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Core;
 
-namespace PD.CLI.CORE.Controllers
+namespace EMSV.CLI.CORE.Controllers
 {
     [RoutePrefix("Admin/Settings")]
     public class SettingsController : ControllerBase

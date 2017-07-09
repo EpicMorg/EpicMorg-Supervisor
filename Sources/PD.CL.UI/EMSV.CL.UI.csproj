@@ -7,8 +7,8 @@
     <ProjectGuid>{AF17210A-EFA0-44B2-817F-A7620EF6009A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PD.CL.UI</RootNamespace>
-    <AssemblyName>PD.CL.UI</AssemblyName>
+    <RootNamespace>EMSV.CL.UI</RootNamespace>
+    <AssemblyName>EMSV.CL.UI</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -118,17 +118,17 @@
     <Content Include="gksu_root_terminal.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PD.Api.Client\PD.Api.Client.csproj">
+    <ProjectReference Include="..\PD.Api.Client\EMSV.Api.Client.csproj">
       <Project>{F3CB51DC-D3A2-489D-B405-75E4873C2059}</Project>
-      <Name>PD.Api.Client</Name>
+      <Name>EMSV.Api.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PD.Api\PD.Api.csproj">
+    <ProjectReference Include="..\PD.Api\EMSV.Api.csproj">
       <Project>{a33db0bc-29c3-449e-a46a-187851b194fc}</Project>
-      <Name>PD.Api</Name>
+      <Name>EMSV.Api</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PD.UI.Shared\PD.UI.Shared.csproj">
+    <ProjectReference Include="..\PD.UI.Shared\EMSV.UI.Shared.csproj">
       <Project>{27C54701-96A6-453E-9B7F-65545DAB1ADB}</Project>
-      <Name>PD.UI.Shared</Name>
+      <Name>EMSV.UI.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

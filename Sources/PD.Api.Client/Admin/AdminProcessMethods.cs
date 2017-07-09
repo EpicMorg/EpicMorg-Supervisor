@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
-using PD.Api.DataTypes;
+using EMSV.Api.DataTypes;
 using KVP = System.Collections.Generic.KeyValuePair<string, string>;
 
-namespace PD.Api.Client {
+namespace EMSV.Api.Client {
 
     public class AdminProcessMethods : MethodsBase, IAdminProcessMethods {
 

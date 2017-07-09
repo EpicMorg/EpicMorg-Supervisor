@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using PD.Api.Client;
+using EMSV.Api.Client;
 
-namespace PD.TUI
+namespace EMSV.CLI
 {
     class Program {
         static void Main(string[] args) {

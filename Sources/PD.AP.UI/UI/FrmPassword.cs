@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace process_demonizator.UI
+namespace EMSV.UI
 {
     public partial class FrmPassword : Form
     {
@@ -23,6 +16,11 @@ namespace process_demonizator.UI
                 MessageBox.Show( "Error", "Passwords don't match", MessageBoxButtons.OK, MessageBoxIcon.Error );
             else
                 DialogResult = DialogResult.OK;
+        }
+
+        private void FrmPassword_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

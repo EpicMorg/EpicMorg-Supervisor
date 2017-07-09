@@ -1,4 +1,4 @@
-﻿namespace PD.CL.UI.UI
+﻿namespace EMSV.CL.UI.UI
 {
     partial class frmProcessInfo
     {

@@ -1,4 +1,4 @@
-﻿namespace PD.Api.Client {
+﻿namespace EMSV.Api.Client {
 
     public class AdminApi : IAdminApi {
 

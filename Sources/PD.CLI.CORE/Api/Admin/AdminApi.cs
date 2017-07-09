@@ -1,6 +1,6 @@
-﻿using PD.Api;
+﻿using EMSV.Api;
 
-namespace PD.CLI.CORE.Api {
+namespace EMSV.CLI.CORE.Api {
 
     public class AdminApi : IAdminApi {
 

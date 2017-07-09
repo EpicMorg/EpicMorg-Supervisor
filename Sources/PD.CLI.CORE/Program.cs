@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Owin.Hosting;
-using PD.Api.DataTypes;
-using PD.CLI.CORE.Core;
-using PD.CLI.CORE.Server;
+using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Core;
+using EMSV.CLI.CORE.Server;
 
-namespace PD.CLI.CORE {
+namespace EMSV.CLI.CORE {
 
     internal class Program {
 

@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
-using PD.Api;
-using PD.Api.DataTypes;
-using PD.CLI.CORE.Core;
-using PD.CLI.CORE.Helpers;
+using EMSV.Api;
+using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Core;
+using EMSV.CLI.CORE.Helpers;
 
-namespace PD.CLI.CORE.Api {
+namespace EMSV.CLI.CORE.Api {
 
     public class SettingsMethods : ISettingsMethods {
 

@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
-using PD.UI.Shared;
+using EMSV.UI.Shared;
 
-namespace process_demonizator.UI {
+namespace EMSV.UI {
 
     public sealed partial class FrmStartHm : Form {
 
@@ -13,6 +13,10 @@ namespace process_demonizator.UI {
         public string Server => txtServer.Text;
         public string Key => txtKey.Text;
 
+        private void FrmStartHm_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 
 }

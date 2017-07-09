@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using PD.Api;
-using PD.CLI.CORE.Core;
+using EMSV.Api;
+using EMSV.CLI.CORE.Core;
 
-namespace PD.CLI.CORE.Api {
+namespace EMSV.CLI.CORE.Api {
 
     public class LogMethods : ILogMethods {
 

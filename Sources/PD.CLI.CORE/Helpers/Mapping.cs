@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using PD.Api.DataTypes;
-using PD.CLI.CORE.Api;
-using PD.CLI.CORE.Core;
+using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Api;
+using EMSV.CLI.CORE.Core;
 
-namespace PD.CLI.CORE.Helpers
+namespace EMSV.CLI.CORE.Helpers
 {
     public class MappingHelper
     {

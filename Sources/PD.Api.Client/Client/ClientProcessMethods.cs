@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using PD.Api.DataTypes;
+using EMSV.Api.DataTypes;
 
-namespace PD.Api.Client {
+namespace EMSV.Api.Client {
 
     public class ClientProcessMethods : MethodsBase, IClientProcessMethods {
 

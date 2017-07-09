@@ -7,8 +7,8 @@
     <ProjectGuid>{6EE0D8DB-8D86-4C6D-AF44-DFE6B58F7604}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>process_demonizator</RootNamespace>
-    <AssemblyName>process_demonizator</AssemblyName>
+    <RootNamespace>EMSV.AP</RootNamespace>
+    <AssemblyName>EMSV.AP</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -136,17 +136,17 @@
     <None Include="Resources\gksu_root_terminal.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PD.Api.Client\PD.Api.Client.csproj">
+    <ProjectReference Include="..\PD.Api.Client\EMSV.Api.Client.csproj">
       <Project>{F3CB51DC-D3A2-489D-B405-75E4873C2059}</Project>
-      <Name>PD.Api.Client</Name>
+      <Name>EMSV.Api.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PD.Api\PD.Api.csproj">
+    <ProjectReference Include="..\PD.Api\EMSV.Api.csproj">
       <Project>{a33db0bc-29c3-449e-a46a-187851b194fc}</Project>
-      <Name>PD.Api</Name>
+      <Name>EMSV.Api</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PD.UI.Shared\PD.UI.Shared.csproj">
+    <ProjectReference Include="..\PD.UI.Shared\EMSV.UI.Shared.csproj">
       <Project>{27C54701-96A6-453E-9B7F-65545DAB1ADB}</Project>
-      <Name>PD.UI.Shared</Name>
+      <Name>EMSV.UI.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

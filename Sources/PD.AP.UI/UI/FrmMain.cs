@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PD.Api;
-using PD.Api.Client;
-using PD.Api.DataTypes;
-using PD.UI.Shared;
+using EMSV.Api.Client;
+using EMSV.Api.DataTypes;
+using EMSV.UI.Shared;
 
-namespace process_demonizator.UI {
+namespace EMSV.UI {
 
     public sealed partial class FrmMain : Form {
 
@@ -244,6 +242,11 @@ namespace process_demonizator.UI {
                 }
             }
             await UpdateProcesses().ConfigureAwait(true);
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

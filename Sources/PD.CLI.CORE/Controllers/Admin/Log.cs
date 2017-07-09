@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
-using PD.Api;
-using PD.CLI.CORE.Core;
+using EMSV.Api;
+using EMSV.CLI.CORE.Core;
 
-namespace PD.CLI.CORE.Controllers {
+namespace EMSV.CLI.CORE.Controllers {
 
     [RoutePrefix("Admin/Log")]
     public class LogController : ControllerBase {

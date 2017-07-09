@@ -1,4 +1,4 @@
-﻿namespace process_demonizator.UI
+﻿namespace EMSV.UI
 {
     sealed partial class FrmStartHm
     {
@@ -111,6 +111,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "name + ver";
+            this.Load += new System.EventHandler(this.FrmStartHm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

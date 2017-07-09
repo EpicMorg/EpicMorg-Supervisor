@@ -3,7 +3,7 @@ using System.Web.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace PD.CLI.CORE.Server {
+namespace EMSV.CLI.CORE.Server {
 
     public static class GlobalConfiguration {
 

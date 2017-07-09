@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
-using PD.UI.Shared;
+using EMSV.UI.Shared;
 
-namespace process_demonizator.UI {
+namespace EMSV.UI {
 
     public sealed partial class frmConnect : Form {
         
@@ -12,6 +12,10 @@ namespace process_demonizator.UI {
 
         public string Server => txtServer.Text;
 
+        private void frmConnect_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 
 }

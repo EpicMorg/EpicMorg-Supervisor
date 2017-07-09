@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PD.CLI.CORE.Core {
+namespace EMSV.CLI.CORE.Core {
 
     public interface ILogManager {
 

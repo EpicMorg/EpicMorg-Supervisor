@@ -1,4 +1,4 @@
-﻿namespace process_demonizator.UI
+﻿namespace EMSV.UI
 {
     sealed partial class FrmAdd
     {
@@ -82,7 +82,7 @@
             this.txtArgs.Size = new System.Drawing.Size(343, 84);
             this.txtArgs.TabIndex = 0;
             // 
-            // txtPathToExe
+            // txtPath
             // 
             this.txtPath.Location = new System.Drawing.Point(6, 32);
             this.txtPath.Name = "txtPath";
@@ -229,6 +229,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "name ver";
+            this.Load += new System.EventHandler(this.FrmAdd_Load);
             this.bgxNull2.ResumeLayout(false);
             this.bgxNull2.PerformLayout();
             this.bgxNull1.ResumeLayout(false);

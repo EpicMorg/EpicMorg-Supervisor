@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using process_demonizator.UI;
-using PD.UI.Shared;
+using EMSV.UI;
+using EMSV.UI.Shared;
 using System.Threading.Tasks;
-using PD.Api.Client;
-using PD.Api.DataTypes;
+using EMSV.Api.Client;
+using EMSV.Api.DataTypes;
 
-namespace PD.CL.UI.UI {
+namespace EMSV.CL.UI.UI {
 
     public partial class FrmMain : Form {
 

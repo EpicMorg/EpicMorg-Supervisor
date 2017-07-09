@@ -1,8 +1,8 @@
 ﻿using System.Windows.Forms;
-using PD.Api.DataTypes;
-using PD.UI.Shared;
+using EMSV.Api.DataTypes;
+using EMSV.UI.Shared;
 
-namespace process_demonizator.UI {
+namespace EMSV.UI {
 
     public sealed partial class FrmSettings : Form {
 
@@ -34,6 +34,10 @@ namespace process_demonizator.UI {
             textBox1.DataBindings.Add( nameof( textBox1.Text ), Model, nameof( Model.LogPath ) );
         }
 
+        private void FrmSettings_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 
 }

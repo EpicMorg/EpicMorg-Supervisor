@@ -3,9 +3,9 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using process_demonizator.UI;
+using EMSV.UI;
 
-namespace process_demonizator
+namespace EMSV
 {
     static class Program
     {

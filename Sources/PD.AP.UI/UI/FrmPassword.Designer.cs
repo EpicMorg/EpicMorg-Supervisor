@@ -1,4 +1,4 @@
-﻿namespace process_demonizator.UI
+﻿namespace EMSV.UI
 {
     partial class FrmPassword
     {
@@ -92,6 +92,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FrmPassword";
             this.Text = "Password";
+            this.Load += new System.EventHandler(this.FrmPassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

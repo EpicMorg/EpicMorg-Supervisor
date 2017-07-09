@@ -3,9 +3,9 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using PD.CL.UI.UI;
+using EMSV.CL.UI.UI;
 
-namespace PD.CL.UI
+namespace EMSV.CL.UI
 {
     static class Program
     {

@@ -1,6 +1,6 @@
-﻿using PD.UI.Shared.Properties;
+﻿using EMSV.UI.Shared.Properties;
 
-namespace process_demonizator.UI
+namespace EMSV.UI
 {
     sealed partial class FrmAbout
     {

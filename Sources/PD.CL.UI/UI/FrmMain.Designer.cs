@@ -1,4 +1,4 @@
-﻿namespace PD.CL.UI.UI
+﻿namespace EMSV.CL.UI.UI
 {
     partial class FrmMain
     {
@@ -259,7 +259,7 @@
             // 
             // iDemonizedProcessBaseBindingSource
             // 
-            this.iDemonizedProcessBaseBindingSource.DataSource = typeof(PD.Api.DataTypes.IDemonizedProcessBase);
+            this.iDemonizedProcessBaseBindingSource.DataSource = typeof(EMSV.Api.DataTypes.IDemonizedProcessBase);
             // 
             // FrmMain
             // 

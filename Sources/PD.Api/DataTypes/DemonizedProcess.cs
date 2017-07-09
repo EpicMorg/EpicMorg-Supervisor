@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 
-namespace PD.Api.DataTypes {
+namespace EMSV.Api.DataTypes {
 
     public interface IDemonizedProcessBase {
 

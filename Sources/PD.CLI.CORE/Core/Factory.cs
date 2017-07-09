@@ -1,4 +1,4 @@
-﻿namespace PD.CLI.CORE.Core {
+﻿namespace EMSV.CLI.CORE.Core {
 
     public interface IFactory<T> {
 

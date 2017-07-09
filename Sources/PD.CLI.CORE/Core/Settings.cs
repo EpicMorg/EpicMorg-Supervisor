@@ -1,7 +1,7 @@
-﻿using PD.Api.DataTypes;
-using PD.CLI.CORE.Helpers;
+﻿using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Helpers;
 
-namespace PD.CLI.CORE.Core {
+namespace EMSV.CLI.CORE.Core {
 
     public interface ISettingsManager {
 

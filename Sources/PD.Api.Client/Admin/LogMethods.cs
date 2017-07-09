@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PD.Api.Client {
+namespace EMSV.Api.Client {
 
     public class LogMethods : MethodsBase, ILogMethods {
 

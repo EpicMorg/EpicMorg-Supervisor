@@ -3,10 +3,10 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using PD.Api.DataTypes;
-using PD.CLI.CORE.Core;
+using EMSV.Api.DataTypes;
+using EMSV.CLI.CORE.Core;
 
-namespace PD.CLI.CORE.Api {
+namespace EMSV.CLI.CORE.Api {
 
     public interface IInternalDemonizedProcess : IRunningDemonizedProcess, IPasswordedDemonizedProcess {
 

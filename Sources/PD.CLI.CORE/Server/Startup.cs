@@ -4,9 +4,9 @@ using Microsoft.Owin;
 //using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-[assembly: OwinStartup( typeof( PD.CLI.CORE.Server.Startup ) )]
+[assembly: OwinStartup( typeof( EMSV.CLI.CORE.Server.Startup ) )]
 
-namespace PD.CLI.CORE.Server {
+namespace EMSV.CLI.CORE.Server {
 
     public class Startup {
 

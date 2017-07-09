@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace PD.Api.Client {
+namespace EMSV.Api.Client {
 
     public abstract class MethodsBase {
         private static FormUrlEncodedContent _emptyContent => new FormUrlEncodedContent( new KeyValuePair<string,string>[0] );

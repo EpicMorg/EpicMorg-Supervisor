@@ -1,4 +1,4 @@
-﻿namespace PD.CLI.CORE.Server
+﻿namespace EMSV.CLI.CORE.Server
 {
     public class FileConfiguration
     {

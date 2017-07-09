@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
-using PD.Api.DataTypes;
+using EMSV.Api.DataTypes;
 
-namespace PD.Api.Client {
+namespace EMSV.Api.Client {
 
     public class SettingsMethods : MethodsBase, ISettingsMethods {
 

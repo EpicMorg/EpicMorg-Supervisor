@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
-using PD.Api;
-using PD.CLI.CORE.Api;
-using PD.CLI.CORE.Helpers;
-using PD.CLI.CORE.Server;
+using EMSV.Api;
+using EMSV.CLI.CORE.Api;
+using EMSV.CLI.CORE.Helpers;
+using EMSV.CLI.CORE.Server;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 
-namespace PD.CLI.CORE.Core {
+namespace EMSV.CLI.CORE.Core {
 
     public static class Di {
 

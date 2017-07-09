@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using PD.Api.DataTypes;
-using PD.UI.Shared;
+using EMSV.Api.DataTypes;
+using EMSV.UI.Shared;
 
 
-namespace process_demonizator.UI {
+namespace EMSV.UI {
     public sealed partial class FrmAdd : Form {
 
         private readonly EventHandler _cmPriorityOnSelectedValueChanged;
@@ -71,6 +71,10 @@ namespace process_demonizator.UI {
         private void btnOK_Click( object sender, EventArgs e ) {
         }
 
+        private void FrmAdd_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
