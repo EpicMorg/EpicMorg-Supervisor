@@ -163,7 +163,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\PD.Api\EMSV.Api.csproj">
+    <ProjectReference Include="..\EMSV.Api\EMSV.Api.csproj">
       <Project>{A33DB0BC-29C3-449E-A46A-187851B194FC}</Project>
       <Name>EMSV.Api</Name>
     </ProjectReference>

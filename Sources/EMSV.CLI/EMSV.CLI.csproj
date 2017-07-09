@@ -4,16 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3CB51DC-D3A2-489D-B405-75E4873C2059}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{21A89E7A-0C1D-4E9E-A13D-CB92864EE8A6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EMSV.Api.Client</RootNamespace>
-    <AssemblyName>EMSV.Api.Client</AssemblyName>
+    <RootNamespace>EMSV.CLI</RootNamespace>
+    <AssemblyName>EMSV.CLI</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +25,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,9 +37,6 @@
     <ApplicationIcon>gksu_root_terminal.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,26 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AdminApi.cs" />
-    <Compile Include="Admin\AdminProcessMethods.cs" />
-    <Compile Include="Admin\LogMethods.cs" />
-    <Compile Include="MethodsBase.cs" />
-    <Compile Include="Admin\SettingsMethods.cs" />
-    <Compile Include="Client\ClientApi.cs" />
-    <Compile Include="Client\ClientProcessMethods.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PD.Api\EMSV.Api.csproj">
-      <Project>{A33DB0BC-29C3-449E-A46A-187851B194FC}</Project>
-      <Name>EMSV.Api</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="gksu_root_terminal.ico" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\EMSV.Api.Client\EMSV.Api.Client.csproj">
+      <Project>{F3CB51DC-D3A2-489D-B405-75E4873C2059}</Project>
+      <Name>EMSV.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EMSV.Api\EMSV.Api.csproj">
+      <Project>{a33db0bc-29c3-449e-a46a-187851b194fc}</Project>
+      <Name>EMSV.Api</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
