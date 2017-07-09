@@ -10,7 +10,7 @@ namespace EMSV.UI {
             Text = $@"Connect to server :: {InfoHelper.NameVersion}";
         }
 
-        public string Server => txtServer.Text;
+        public string Server => "http://" + ipAddressText.Text + ":" + txtServer.Text;
 
         private void frmConnect_Load(object sender, System.EventArgs e)
         {

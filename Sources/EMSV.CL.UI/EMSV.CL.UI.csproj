@@ -36,6 +36,9 @@
     <ApplicationIcon>gksu_root_terminal.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IPAddressControlLib, Version=1.3.5942.27121, Culture=neutral, PublicKeyToken=fe2f1b8a0821423a, processorArchitecture=MSIL">
+      <HintPath>..\packages\IPAddressControlLib.1.3.5942.27121\lib\net452\IPAddressControlLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -100,6 +103,7 @@
     <EmbeddedResource Include="UI\frmUnlock.resx">
       <DependentUpon>frmUnlock.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\PD.Api.DataTypes.IDemonizedProcessBase.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

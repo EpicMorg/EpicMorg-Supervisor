@@ -10,9 +10,9 @@ namespace EMSV.UI
             InitializeComponent();
         }
 
-        public string Password => textBox1.Text;
+        public string Password => txtPasswordOriginal.Text;
         private void button1_Click(object sender, EventArgs e) {
-            if ( textBox1.Text != textBox2.Text )
+            if ( txtPasswordOriginal.Text != txtPasswordRetype.Text )
                 MessageBox.Show( "Error", "Passwords don't match", MessageBoxButtons.OK, MessageBoxIcon.Error );
             else
                 DialogResult = DialogResult.OK;

@@ -10,10 +10,15 @@ namespace EMSV.UI {
             Text = $@"Connect to server :: {InfoHelper.NameVersion}";
         }
 
-        public string Server => txtServer.Text;
+        public string Server => "http://" + ipAddressText.Text + ":" +txtServer.Text;
         public string Key => txtKey.Text;
 
         private void FrmStartHm_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void ipAddressText_TextChanged(object sender, System.EventArgs e)
         {
 
         }

@@ -31,49 +31,71 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStartHm));
             this.btnOk = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ipAddressText = new IPAddressControlLib.IPAddressControl();
             this.txtServer = new System.Windows.Forms.TextBox();
             this.txtKey = new System.Windows.Forms.TextBox();
             this.lblPl = new System.Windows.Forms.Label();
             this.lblSl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOk
             // 
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(236, 125);
+            this.btnOk.Location = new System.Drawing.Point(6, 97);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.Size = new System.Drawing.Size(243, 30);
             this.btnOk.TabIndex = 1;
-            this.btnOk.Text = "Start";
+            this.btnOk.Text = "Connect";
             this.btnOk.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ipAddressText);
+            this.groupBox1.Controls.Add(this.btnOk);
             this.groupBox1.Controls.Add(this.txtServer);
             this.groupBox1.Controls.Add(this.txtKey);
             this.groupBox1.Controls.Add(this.lblPl);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lblSl);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(299, 107);
+            this.groupBox1.Size = new System.Drawing.Size(255, 133);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Connection info:";
+            // 
+            // ipAddressText
+            // 
+            this.ipAddressText.AllowInternalTab = false;
+            this.ipAddressText.AutoHeight = true;
+            this.ipAddressText.BackColor = System.Drawing.SystemColors.Window;
+            this.ipAddressText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ipAddressText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ipAddressText.Location = new System.Drawing.Point(6, 32);
+            this.ipAddressText.MinimumSize = new System.Drawing.Size(87, 20);
+            this.ipAddressText.Name = "ipAddressText";
+            this.ipAddressText.ReadOnly = false;
+            this.ipAddressText.Size = new System.Drawing.Size(162, 20);
+            this.ipAddressText.TabIndex = 5;
+            this.ipAddressText.Text = "127.0.0.1";
+            this.ipAddressText.TextChanged += new System.EventHandler(this.ipAddressText_TextChanged);
             // 
             // txtServer
             // 
-            this.txtServer.Location = new System.Drawing.Point(7, 33);
+            this.txtServer.Location = new System.Drawing.Point(174, 32);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(286, 20);
+            this.txtServer.Size = new System.Drawing.Size(75, 20);
             this.txtServer.TabIndex = 4;
-            this.txtServer.Text = "http://192.168.0.106:31337";
+            this.txtServer.Text = "31337";
             // 
             // txtKey
             // 
             this.txtKey.Location = new System.Drawing.Point(6, 71);
             this.txtKey.Name = "txtKey";
-            this.txtKey.PasswordChar = '卐';
-            this.txtKey.Size = new System.Drawing.Size(287, 20);
+            this.txtKey.PasswordChar = '*';
+            this.txtKey.Size = new System.Drawing.Size(243, 20);
             this.txtKey.TabIndex = 3;
             this.txtKey.Text = "12345";
             // 
@@ -91,18 +113,26 @@
             this.lblSl.AutoSize = true;
             this.lblSl.Location = new System.Drawing.Point(6, 16);
             this.lblSl.Name = "lblSl";
-            this.lblSl.Size = new System.Drawing.Size(81, 13);
+            this.lblSl.Size = new System.Drawing.Size(20, 13);
             this.lblSl.TabIndex = 1;
-            this.lblSl.Text = "Server address:";
+            this.lblSl.Text = "IP:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(171, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Port:";
             // 
             // FrmStartHm
             // 
             this.AcceptButton = this.btnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 160);
+            this.ClientSize = new System.Drawing.Size(279, 157);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnOk);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -125,5 +155,7 @@
         private System.Windows.Forms.Label lblPl;
         private System.Windows.Forms.Label lblSl;
         private System.Windows.Forms.TextBox txtServer;
+        private System.Windows.Forms.Label label1;
+        public IPAddressControlLib.IPAddressControl ipAddressText;
     }
 }
