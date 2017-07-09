@@ -36,14 +36,13 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.cmProcess = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmUnlock = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.unlockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageListMain = new System.Windows.Forms.ImageList(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,10 +60,12 @@
             this.smenuLicense = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.smenuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.unlockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tabItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessList)).BeginInit();
             this.tabControl.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.cmProcess.SuspendLayout();
             this.cmUnlock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).BeginInit();
@@ -121,7 +122,7 @@
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(896, 22);
             this.statusStrip1.TabIndex = 5;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Text = "statusStrip";
             // 
             // _notifyIcon
             // 
@@ -129,16 +130,17 @@
             this._notifyIcon.Visible = true;
             this._notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this._notifyIcon_MouseClick);
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
             this.menuHelp});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(896, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(896, 24);
+            this.menuStrip.TabIndex = 4;
+            this.menuStrip.Text = "menuStrip1";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // cmProcess
             // 
@@ -146,35 +148,40 @@
             this.startToolStripMenuItem,
             this.restartToolStripMenuItem,
             this.stopToolStripMenuItem,
+            this.toolStripSeparator4,
             this.infoToolStripMenuItem});
             this.cmProcess.Name = "cmProcess";
-            this.cmProcess.Size = new System.Drawing.Size(111, 92);
+            this.cmProcess.Size = new System.Drawing.Size(153, 120);
             // 
             // startToolStripMenuItem
             // 
+            this.startToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.play_green;
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
+            this.restartToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.reload;
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
+            this.stopToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.stop_red;
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
             // infoToolStripMenuItem
             // 
+            this.infoToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.eyes;
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
@@ -184,13 +191,6 @@
             this.unlockToolStripMenuItem});
             this.cmUnlock.Name = "cmUnlock";
             this.cmUnlock.Size = new System.Drawing.Size(112, 26);
-            // 
-            // unlockToolStripMenuItem
-            // 
-            this.unlockToolStripMenuItem.Name = "unlockToolStripMenuItem";
-            this.unlockToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.unlockToolStripMenuItem.Text = "Unlock";
-            this.unlockToolStripMenuItem.Click += new System.EventHandler(this.unlockToolStripMenuItem_Click);
             // 
             // imageListMain
             // 
@@ -266,7 +266,7 @@
             // 
             this.английскийToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.united_kingdom;
             this.английскийToolStripMenuItem.Name = "английскийToolStripMenuItem";
-            this.английскийToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.английскийToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.английскийToolStripMenuItem.Text = "Английский";
             this.английскийToolStripMenuItem.Click += new System.EventHandler(this.английскийToolStripMenuItem_Click);
             // 
@@ -274,7 +274,7 @@
             // 
             this.russianToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.russia;
             this.russianToolStripMenuItem.Name = "russianToolStripMenuItem";
-            this.russianToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.russianToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.russianToolStripMenuItem.Text = "Русский";
             this.russianToolStripMenuItem.Click += new System.EventHandler(this.russianToolStripMenuItem_Click);
             // 
@@ -331,6 +331,19 @@
             this.smenuAbout.Text = "About";
             this.smenuAbout.Click += new System.EventHandler(this.smenuAbout_Click);
             // 
+            // unlockToolStripMenuItem
+            // 
+            this.unlockToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.lock_key;
+            this.unlockToolStripMenuItem.Name = "unlockToolStripMenuItem";
+            this.unlockToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.unlockToolStripMenuItem.Text = "Unlock";
+            this.unlockToolStripMenuItem.Click += new System.EventHandler(this.unlockToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,7 +351,7 @@
             this.ClientSize = new System.Drawing.Size(896, 515);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(480, 240);
             this.Name = "FrmMain";
@@ -349,8 +362,8 @@
             this.tabItems.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessList)).EndInit();
             this.tabControl.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.cmProcess.ResumeLayout(false);
             this.cmUnlock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iDemonizedProcessBaseBindingSource)).EndInit();
@@ -373,7 +386,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem smenuStartMonitorServer;
         private System.Windows.Forms.ToolStripMenuItem menuFile;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.BindingSource iDemonizedProcessBaseBindingSource;
         private System.Windows.Forms.ContextMenuStrip cmProcess;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
@@ -390,6 +403,7 @@
         private System.Windows.Forms.ToolStripMenuItem russianToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ImageList imageListMain;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
     }
 }
 

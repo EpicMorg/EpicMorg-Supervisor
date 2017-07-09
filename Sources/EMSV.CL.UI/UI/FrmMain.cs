@@ -17,7 +17,7 @@ namespace EMSV.CL.UI.UI {
 
         public FrmMain() {
             InitializeComponent();
-            Text = InfoHelper.NameVersion;
+            Text =  InfoHelper.NameVersion + " - Client panel";
             _notifyIcon.Text = InfoHelper.NameVersion;
             dgvProcessList.AutoGenerateColumns = false;
         }
@@ -133,6 +133,11 @@ namespace EMSV.CL.UI.UI {
         private void russianToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LanguageManager.Set("ru");
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 

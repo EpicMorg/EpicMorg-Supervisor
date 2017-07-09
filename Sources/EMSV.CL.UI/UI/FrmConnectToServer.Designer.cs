@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConnect));
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtServer = new System.Windows.Forms.NumericUpDown();
             this.ipAddressText = new IPAddressControlLib.IPAddressControl();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSl = new System.Windows.Forms.Label();
-            this.txtServer = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtServer)).BeginInit();
             this.SuspendLayout();
@@ -43,13 +43,13 @@
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Image = global::EMSV.CL.UI.Properties.Resources.arrow_switch_bluegreen;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(174, 58);
+            this.button1.Location = new System.Drawing.Point(6, 58);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.Size = new System.Drawing.Size(243, 31);
             this.button1.TabIndex = 1;
             this.button1.Text = "Connect";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -66,6 +66,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Connection info:";
             // 
+            // txtServer
+            // 
+            this.txtServer.Location = new System.Drawing.Point(174, 33);
+            this.txtServer.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(75, 20);
+            this.txtServer.TabIndex = 10;
+            this.txtServer.Value = new decimal(new int[] {
+            31337,
+            0,
+            0,
+            0});
+            // 
             // ipAddressText
             // 
             this.ipAddressText.AllowInternalTab = false;
@@ -79,7 +96,7 @@
             this.ipAddressText.ReadOnly = false;
             this.ipAddressText.Size = new System.Drawing.Size(162, 20);
             this.ipAddressText.TabIndex = 9;
-            this.ipAddressText.Text = "...";
+            this.ipAddressText.Text = "127.0.0.1";
             // 
             // label2
             // 
@@ -98,23 +115,6 @@
             this.lblSl.Size = new System.Drawing.Size(20, 13);
             this.lblSl.TabIndex = 7;
             this.lblSl.Text = "IP:";
-            // 
-            // txtServer
-            // 
-            this.txtServer.Location = new System.Drawing.Point(174, 33);
-            this.txtServer.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(75, 20);
-            this.txtServer.TabIndex = 10;
-            this.txtServer.Value = new decimal(new int[] {
-            31337,
-            0,
-            0,
-            0});
             // 
             // frmConnect
             // 

@@ -16,7 +16,7 @@ namespace EMSV.UI {
 
         public FrmMain() {
             InitializeComponent();
-            Text = InfoHelper.NameVersion;
+            Text = InfoHelper.NameVersion + " - Admin Panel";
             _notifyIcon.Text = InfoHelper.NameVersion;
             dgvProcessList.AutoGenerateColumns = false;
         }

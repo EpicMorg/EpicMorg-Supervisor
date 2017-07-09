@@ -136,6 +136,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gksu_root_terminal.ico" />
+    <None Include="Resources\application_osx_lightning.png" />
+    <None Include="Resources\application_osx_delete.png" />
+    <None Include="Resources\application_osx_add.png" />
+    <None Include="Resources\key_start.png" />
+    <None Include="Resources\border_draw.png" />
+    <None Include="Resources\cog_start.png" />
+    <None Include="Resources\world_connect.png" />
+    <None Include="Resources\user_gray_cool.png" />
+    <None Include="Resources\united-kingdom.png" />
+    <None Include="Resources\text_complete.png" />
+    <None Include="Resources\stop_red.png" />
+    <None Include="Resources\shield_rainbow.png" />
+    <None Include="Resources\russia.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\rainbow_star.png" />
+    <None Include="Resources\play_green.png" />
+    <None Include="Resources\page_header_footer.png" />
+    <None Include="Resources\lock_key.png" />
+    <None Include="Resources\house_connect.png" />
+    <None Include="Resources\font_color.png" />
+    <None Include="Resources\eyes.png" />
+    <None Include="Resources\bullet_cross.png" />
+    <None Include="Resources\arrow_switch_bluegreen.png" />
     <None Include="Resources\gksu_root_terminal.png" />
   </ItemGroup>
   <ItemGroup>

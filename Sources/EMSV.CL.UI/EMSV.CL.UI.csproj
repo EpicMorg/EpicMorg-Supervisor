@@ -27,7 +27,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Distr\ClientUI\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -120,6 +120,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gksu_root_terminal.ico" />
+    <None Include="Resources\eyes.png" />
+    <None Include="Resources\play_green.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\stop_red.png" />
+    <None Include="Resources\lock_key.png" />
     <None Include="Resources\united-kingdom.png" />
     <None Include="Resources\russia.png" />
     <None Include="Resources\rainbow_star.png" />
