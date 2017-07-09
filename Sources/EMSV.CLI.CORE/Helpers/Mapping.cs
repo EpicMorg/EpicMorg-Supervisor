@@ -12,16 +12,19 @@ namespace EMSV.CLI.CORE.Helpers
         public static MappingHelper Instance => _instance;
 
         private MappingHelper() {
-            Mapper.Configuration.ConstructServicesUsing( type=>Di.Get(type) );
-            Mapper.CreateMap<ISettingsPassword, IInternalSettings>();
-            Mapper.CreateMap<ISettings, ISettingsPassword>();
-            Mapper.CreateMap<ISettingsPassword, ISettingsPassword>();
+            Mapper.Initialize(a =>
+            {
+                a.ConstructServicesUsing(type => Di.Get(type));
+                a.CreateMap<ISettings, ISettingsPassword>();
+                a.CreateMap<ISettingsPassword, ISettingsPassword>();
 
-            Mapper.CreateMap<IPasswordedDemonizedProcess, InternalDemonizedProcess>().ConstructUsingServiceLocator();
-            Mapper.CreateMap<IPasswordedDemonizedProcess, IInternalDemonizedProcess>();
+                a.CreateMap<IPasswordedDemonizedProcess, InternalDemonizedProcess>().ConstructUsingServiceLocator();
+                a.CreateMap<IPasswordedDemonizedProcess, IInternalDemonizedProcess>();
 
-            Mapper.CreateMap<InternalDemonizedProcess, PasswordedDemonizedProcess>();
-            Mapper.CreateMap<InternalDemonizedProcess, DemonizedProcessBase>();
+                a.CreateMap<InternalDemonizedProcess, PasswordedDemonizedProcess>();
+                a.CreateMap<InternalDemonizedProcess, DemonizedProcessBase>();
+            });
+            
         }
 
         public void Map<TSource, TDest>( TSource source, TDest dest ) => Mapper.Map( source, dest );
