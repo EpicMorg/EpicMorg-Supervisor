@@ -1,5 +1,5 @@
 # Supervisor
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Build status](https://ci.appveyor.com/api/projects/status/qdd0y1j2r0gshya9?svg=true)](https://ci.appveyor.com/project/stamepicmorg/epicmorg-supervisor) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Tool for run and handle any process. With local and remote controll.
 
