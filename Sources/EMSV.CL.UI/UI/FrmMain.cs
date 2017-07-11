@@ -46,7 +46,18 @@ namespace EMSV.CL.UI.UI {
         private void smenuAbout_Click( object sender, EventArgs e ) => new FrmAbout().ShowDialog();
 
         private async void smenuStartMonitorServer_Click( object sender, EventArgs e ) {
-            using ( var cf = new frmConnect() ) if ( cf.ShowDialog() == DialogResult.OK ) await Connect( cf.Server ).ConfigureAwait( true );
+            using ( var cf = new frmConnect() )
+            {
+                if ( cf.ShowDialog() == DialogResult.OK )
+                {
+                    try { await Connect(cf.Server).ConfigureAwait(true); }
+                    catch {
+                        MessageBox.Show("Failed to get response from server", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    
+                }
+            }
         }
 
         private async Task Connect( string server ) {
@@ -134,10 +145,11 @@ namespace EMSV.CL.UI.UI {
         {
             LanguageManager.Set("ru");
         }
+ 
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void smenuExit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 

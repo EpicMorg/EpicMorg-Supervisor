@@ -25,17 +25,17 @@ namespace EMSV.CL.UI.UI {
         }
 
         private void SetBindings() {
-            AddBindingInternal( this, nameof( Process.Name ) );
-            AddBindingInternal( lblId, nameof( Process.Id ) );
-            AddBindingInternal( lblName, nameof( Process.Name ) );
-            AddBindingInternal( lblFile, nameof( Process.Path ) );
-            AddBindingInternal( lblArguments, nameof( Process.Arguments ) );
-            AddBindingInternal( lblStatus, nameof( Process.Status ) );
-            AddBindingInternal( lblDefaultPriority, nameof( Process.Priority ) );
-            AddBindingInternal( lblCurrentPriority, nameof( Process.CurrentPriority ) );
-            AddBindingInternal( lblRestarts, nameof( Process.Restarts ) );
-            AddBindingInternal( lblAutoRestart, nameof( Process.Autorestart ) );
-            AddBindingInternal( lblHide, nameof( Process.HideOnStart ) );
+            AddBindingInternal( this, nameof(Process.Name ) );
+            AddBindingInternal( txtId, nameof( Process.Id ) );
+            AddBindingInternal( txtName, nameof( Process.Name ) );
+            AddBindingInternal( txtFile, nameof( Process.Path ) );
+            AddBindingInternal( txtArguments, nameof( Process.Arguments ) );
+            AddBindingInternal( txtStatus, nameof( Process.Status ) );
+            AddBindingInternal( txtDefaultPriority, nameof( Process.Priority ) );
+            AddBindingInternal( txtCurrentPriority, nameof( Process.CurrentPriority ) );
+            AddBindingInternal( txtRestarts, nameof( Process.Restarts ) );
+            AddBindingInternal(checkAutoRestart, nameof( Process.Autorestart ) );
+            AddBindingInternal(checkHide, nameof( Process.HideOnStart ) );
         }
 
         private Binding AddBindingInternal( Control ct, string prop ) => ct.DataBindings.Add( nameof( Text ), Process, prop );
@@ -48,6 +48,36 @@ namespace EMSV.CL.UI.UI {
 
         public frmProcessInfo() { InitializeComponent(); }
 
+        private void FrmProcessInfo_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+     
+
+        private void CheckHide_TextChanged(object sender, System.EventArgs e)
+        {
+            if (checkHide.Text == "True")
+            {
+                checkHide.Checked = true;
+            }
+            else
+            {
+                checkHide.Checked = false;
+            }
+        }
+
+        private void checkAutoRestart_TextChanged(object sender, System.EventArgs e)
+        {
+            if (checkAutoRestart.Text == "True")
+            {
+                checkAutoRestart.Checked = true;
+            }
+            else
+            {
+                checkAutoRestart.Checked = false;
+            }
+        }
     }
 
 }

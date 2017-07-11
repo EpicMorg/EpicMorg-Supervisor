@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProcessInfo));
             this.lblIdl = new System.Windows.Forms.Label();
             this.lblNl = new System.Windows.Forms.Label();
             this.lblFl = new System.Windows.Forms.Label();
@@ -35,25 +36,27 @@
             this.lblSl = new System.Windows.Forms.Label();
             this.lblDPl = new System.Windows.Forms.Label();
             this.lblCPl = new System.Windows.Forms.Label();
-            this.lblCurrentPriority = new System.Windows.Forms.Label();
-            this.lblDefaultPriority = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblArguments = new System.Windows.Forms.Label();
-            this.lblFile = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
             this.lblRl = new System.Windows.Forms.Label();
             this.lblARl = new System.Windows.Forms.Label();
             this.lblHOSl = new System.Windows.Forms.Label();
-            this.lblHide = new System.Windows.Forms.Label();
-            this.lblAutoRestart = new System.Windows.Forms.Label();
-            this.lblRestarts = new System.Windows.Forms.Label();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.checkAutoRestart = new System.Windows.Forms.CheckBox();
+            this.checkHide = new System.Windows.Forms.CheckBox();
+            this.txtRestarts = new System.Windows.Forms.TextBox();
+            this.txtCurrentPriority = new System.Windows.Forms.TextBox();
+            this.txtDefaultPriority = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.txtArguments = new System.Windows.Forms.TextBox();
+            this.txtFile = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblIdl
             // 
             this.lblIdl.AutoSize = true;
-            this.lblIdl.Location = new System.Drawing.Point(13, 13);
+            this.lblIdl.Location = new System.Drawing.Point(6, 22);
             this.lblIdl.Name = "lblIdl";
             this.lblIdl.Size = new System.Drawing.Size(18, 13);
             this.lblIdl.TabIndex = 0;
@@ -62,7 +65,7 @@
             // lblNl
             // 
             this.lblNl.AutoSize = true;
-            this.lblNl.Location = new System.Drawing.Point(13, 57);
+            this.lblNl.Location = new System.Drawing.Point(6, 48);
             this.lblNl.Name = "lblNl";
             this.lblNl.Size = new System.Drawing.Size(35, 13);
             this.lblNl.TabIndex = 1;
@@ -71,7 +74,7 @@
             // lblFl
             // 
             this.lblFl.AutoSize = true;
-            this.lblFl.Location = new System.Drawing.Point(13, 101);
+            this.lblFl.Location = new System.Drawing.Point(6, 74);
             this.lblFl.Name = "lblFl";
             this.lblFl.Size = new System.Drawing.Size(23, 13);
             this.lblFl.TabIndex = 2;
@@ -80,7 +83,7 @@
             // lblAl
             // 
             this.lblAl.AutoSize = true;
-            this.lblAl.Location = new System.Drawing.Point(13, 145);
+            this.lblAl.Location = new System.Drawing.Point(6, 100);
             this.lblAl.Name = "lblAl";
             this.lblAl.Size = new System.Drawing.Size(57, 13);
             this.lblAl.TabIndex = 3;
@@ -89,7 +92,7 @@
             // lblSl
             // 
             this.lblSl.AutoSize = true;
-            this.lblSl.Location = new System.Drawing.Point(13, 189);
+            this.lblSl.Location = new System.Drawing.Point(6, 126);
             this.lblSl.Name = "lblSl";
             this.lblSl.Size = new System.Drawing.Size(37, 13);
             this.lblSl.TabIndex = 4;
@@ -98,7 +101,7 @@
             // lblDPl
             // 
             this.lblDPl.AutoSize = true;
-            this.lblDPl.Location = new System.Drawing.Point(13, 233);
+            this.lblDPl.Location = new System.Drawing.Point(6, 152);
             this.lblDPl.Name = "lblDPl";
             this.lblDPl.Size = new System.Drawing.Size(75, 13);
             this.lblDPl.TabIndex = 5;
@@ -107,79 +110,16 @@
             // lblCPl
             // 
             this.lblCPl.AutoSize = true;
-            this.lblCPl.Location = new System.Drawing.Point(13, 277);
+            this.lblCPl.Location = new System.Drawing.Point(6, 178);
             this.lblCPl.Name = "lblCPl";
             this.lblCPl.Size = new System.Drawing.Size(75, 13);
             this.lblCPl.TabIndex = 6;
             this.lblCPl.Text = "Current Priority";
             // 
-            // lblCurrentPriority
-            // 
-            this.lblCurrentPriority.AutoSize = true;
-            this.lblCurrentPriority.Location = new System.Drawing.Point(161, 277);
-            this.lblCurrentPriority.Name = "lblCurrentPriority";
-            this.lblCurrentPriority.Size = new System.Drawing.Size(75, 13);
-            this.lblCurrentPriority.TabIndex = 13;
-            this.lblCurrentPriority.Text = "Current Priority";
-            // 
-            // lblDefaultPriority
-            // 
-            this.lblDefaultPriority.AutoSize = true;
-            this.lblDefaultPriority.Location = new System.Drawing.Point(161, 233);
-            this.lblDefaultPriority.Name = "lblDefaultPriority";
-            this.lblDefaultPriority.Size = new System.Drawing.Size(75, 13);
-            this.lblDefaultPriority.TabIndex = 12;
-            this.lblDefaultPriority.Text = "Default Priority";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(161, 189);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(37, 13);
-            this.lblStatus.TabIndex = 11;
-            this.lblStatus.Text = "Status";
-            // 
-            // lblArguments
-            // 
-            this.lblArguments.AutoSize = true;
-            this.lblArguments.Location = new System.Drawing.Point(161, 145);
-            this.lblArguments.Name = "lblArguments";
-            this.lblArguments.Size = new System.Drawing.Size(57, 13);
-            this.lblArguments.TabIndex = 10;
-            this.lblArguments.Text = "Arguments";
-            // 
-            // lblFile
-            // 
-            this.lblFile.AutoSize = true;
-            this.lblFile.Location = new System.Drawing.Point(161, 101);
-            this.lblFile.Name = "lblFile";
-            this.lblFile.Size = new System.Drawing.Size(23, 13);
-            this.lblFile.TabIndex = 9;
-            this.lblFile.Text = "File";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(161, 57);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 8;
-            this.lblName.Text = "Name";
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(161, 13);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(18, 13);
-            this.lblId.TabIndex = 7;
-            this.lblId.Text = "ID";
-            // 
             // lblRl
             // 
             this.lblRl.AutoSize = true;
-            this.lblRl.Location = new System.Drawing.Point(13, 321);
+            this.lblRl.Location = new System.Drawing.Point(6, 204);
             this.lblRl.Name = "lblRl";
             this.lblRl.Size = new System.Drawing.Size(46, 13);
             this.lblRl.TabIndex = 14;
@@ -188,7 +128,7 @@
             // lblARl
             // 
             this.lblARl.AutoSize = true;
-            this.lblARl.Location = new System.Drawing.Point(13, 365);
+            this.lblARl.Location = new System.Drawing.Point(6, 228);
             this.lblARl.Name = "lblARl";
             this.lblARl.Size = new System.Drawing.Size(63, 13);
             this.lblARl.TabIndex = 15;
@@ -197,67 +137,150 @@
             // lblHOSl
             // 
             this.lblHOSl.AutoSize = true;
-            this.lblHOSl.Location = new System.Drawing.Point(13, 409);
+            this.lblHOSl.Location = new System.Drawing.Point(6, 251);
             this.lblHOSl.Name = "lblHOSl";
             this.lblHOSl.Size = new System.Drawing.Size(67, 13);
             this.lblHOSl.TabIndex = 16;
             this.lblHOSl.Text = "Hide on start";
             // 
-            // lblHide
+            // groupBox
             // 
-            this.lblHide.AutoSize = true;
-            this.lblHide.Location = new System.Drawing.Point(161, 409);
-            this.lblHide.Name = "lblHide";
-            this.lblHide.Size = new System.Drawing.Size(67, 13);
-            this.lblHide.TabIndex = 19;
-            this.lblHide.Text = "Hide on start";
+            this.groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox.Controls.Add(this.checkAutoRestart);
+            this.groupBox.Controls.Add(this.checkHide);
+            this.groupBox.Controls.Add(this.txtRestarts);
+            this.groupBox.Controls.Add(this.txtCurrentPriority);
+            this.groupBox.Controls.Add(this.txtDefaultPriority);
+            this.groupBox.Controls.Add(this.txtStatus);
+            this.groupBox.Controls.Add(this.txtArguments);
+            this.groupBox.Controls.Add(this.txtFile);
+            this.groupBox.Controls.Add(this.txtName);
+            this.groupBox.Controls.Add(this.txtId);
+            this.groupBox.Controls.Add(this.lblIdl);
+            this.groupBox.Controls.Add(this.lblNl);
+            this.groupBox.Controls.Add(this.lblFl);
+            this.groupBox.Controls.Add(this.lblHOSl);
+            this.groupBox.Controls.Add(this.lblAl);
+            this.groupBox.Controls.Add(this.lblARl);
+            this.groupBox.Controls.Add(this.lblSl);
+            this.groupBox.Controls.Add(this.lblRl);
+            this.groupBox.Controls.Add(this.lblDPl);
+            this.groupBox.Controls.Add(this.lblCPl);
+            this.groupBox.Location = new System.Drawing.Point(12, 12);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(302, 282);
+            this.groupBox.TabIndex = 20;
+            this.groupBox.TabStop = false;
+            this.groupBox.Text = "Info:";
             // 
-            // lblAutoRestart
+            // checkAutoRestart
             // 
-            this.lblAutoRestart.AutoSize = true;
-            this.lblAutoRestart.Location = new System.Drawing.Point(161, 365);
-            this.lblAutoRestart.Name = "lblAutoRestart";
-            this.lblAutoRestart.Size = new System.Drawing.Size(63, 13);
-            this.lblAutoRestart.TabIndex = 18;
-            this.lblAutoRestart.Text = "AutoRestart";
+            this.checkAutoRestart.AutoSize = true;
+            this.checkAutoRestart.Enabled = false;
+            this.checkAutoRestart.Location = new System.Drawing.Point(104, 227);
+            this.checkAutoRestart.Name = "checkAutoRestart";
+            this.checkAutoRestart.Size = new System.Drawing.Size(51, 17);
+            this.checkAutoRestart.TabIndex = 21;
+            this.checkAutoRestart.Text = "False";
+            this.checkAutoRestart.UseVisualStyleBackColor = true;
+            this.checkAutoRestart.TextChanged += new System.EventHandler(this.checkAutoRestart_TextChanged);
             // 
-            // lblRestarts
+            // checkHide
             // 
-            this.lblRestarts.AutoSize = true;
-            this.lblRestarts.Location = new System.Drawing.Point(161, 321);
-            this.lblRestarts.Name = "lblRestarts";
-            this.lblRestarts.Size = new System.Drawing.Size(46, 13);
-            this.lblRestarts.TabIndex = 17;
-            this.lblRestarts.Text = "Restarts";
+            this.checkHide.AutoSize = true;
+            this.checkHide.Enabled = false;
+            this.checkHide.Location = new System.Drawing.Point(104, 250);
+            this.checkHide.Name = "checkHide";
+            this.checkHide.Size = new System.Drawing.Size(51, 17);
+            this.checkHide.TabIndex = 21;
+            this.checkHide.Text = "False";
+            this.checkHide.UseVisualStyleBackColor = true;
+            this.checkHide.TextChanged += new System.EventHandler(this.CheckHide_TextChanged);
+            // 
+            // txtRestarts
+            // 
+            this.txtRestarts.Location = new System.Drawing.Point(104, 201);
+            this.txtRestarts.Name = "txtRestarts";
+            this.txtRestarts.ReadOnly = true;
+            this.txtRestarts.Size = new System.Drawing.Size(192, 20);
+            this.txtRestarts.TabIndex = 20;
+            // 
+            // txtCurrentPriority
+            // 
+            this.txtCurrentPriority.Location = new System.Drawing.Point(104, 175);
+            this.txtCurrentPriority.Name = "txtCurrentPriority";
+            this.txtCurrentPriority.ReadOnly = true;
+            this.txtCurrentPriority.Size = new System.Drawing.Size(192, 20);
+            this.txtCurrentPriority.TabIndex = 20;
+            // 
+            // txtDefaultPriority
+            // 
+            this.txtDefaultPriority.Location = new System.Drawing.Point(104, 149);
+            this.txtDefaultPriority.Name = "txtDefaultPriority";
+            this.txtDefaultPriority.ReadOnly = true;
+            this.txtDefaultPriority.Size = new System.Drawing.Size(192, 20);
+            this.txtDefaultPriority.TabIndex = 20;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.Location = new System.Drawing.Point(104, 123);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
+            this.txtStatus.Size = new System.Drawing.Size(192, 20);
+            this.txtStatus.TabIndex = 20;
+            // 
+            // txtArguments
+            // 
+            this.txtArguments.Location = new System.Drawing.Point(104, 97);
+            this.txtArguments.Name = "txtArguments";
+            this.txtArguments.ReadOnly = true;
+            this.txtArguments.Size = new System.Drawing.Size(192, 20);
+            this.txtArguments.TabIndex = 20;
+            // 
+            // txtFile
+            // 
+            this.txtFile.Location = new System.Drawing.Point(104, 71);
+            this.txtFile.Name = "txtFile";
+            this.txtFile.ReadOnly = true;
+            this.txtFile.Size = new System.Drawing.Size(192, 20);
+            this.txtFile.TabIndex = 20;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(104, 45);
+            this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
+            this.txtName.Size = new System.Drawing.Size(192, 20);
+            this.txtName.TabIndex = 20;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(104, 19);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(192, 20);
+            this.txtId.TabIndex = 20;
             // 
             // frmProcessInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 434);
-            this.Controls.Add(this.lblHide);
-            this.Controls.Add(this.lblAutoRestart);
-            this.Controls.Add(this.lblRestarts);
-            this.Controls.Add(this.lblHOSl);
-            this.Controls.Add(this.lblARl);
-            this.Controls.Add(this.lblRl);
-            this.Controls.Add(this.lblCurrentPriority);
-            this.Controls.Add(this.lblDefaultPriority);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblArguments);
-            this.Controls.Add(this.lblFile);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblId);
-            this.Controls.Add(this.lblCPl);
-            this.Controls.Add(this.lblDPl);
-            this.Controls.Add(this.lblSl);
-            this.Controls.Add(this.lblAl);
-            this.Controls.Add(this.lblFl);
-            this.Controls.Add(this.lblNl);
-            this.Controls.Add(this.lblIdl);
+            this.ClientSize = new System.Drawing.Size(326, 306);
+            this.Controls.Add(this.groupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmProcessInfo";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Item info:";
+            this.Load += new System.EventHandler(this.FrmProcessInfo_Load);
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -270,18 +293,19 @@
         private System.Windows.Forms.Label lblSl;
         private System.Windows.Forms.Label lblDPl;
         private System.Windows.Forms.Label lblCPl;
-        private System.Windows.Forms.Label lblCurrentPriority;
-        private System.Windows.Forms.Label lblDefaultPriority;
-        private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Label lblArguments;
-        private System.Windows.Forms.Label lblFile;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblRl;
         private System.Windows.Forms.Label lblARl;
         private System.Windows.Forms.Label lblHOSl;
-        private System.Windows.Forms.Label lblHide;
-        private System.Windows.Forms.Label lblAutoRestart;
-        private System.Windows.Forms.Label lblRestarts;
+        private System.Windows.Forms.GroupBox groupBox;
+        private System.Windows.Forms.TextBox txtRestarts;
+        private System.Windows.Forms.TextBox txtCurrentPriority;
+        private System.Windows.Forms.TextBox txtDefaultPriority;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.TextBox txtArguments;
+        private System.Windows.Forms.TextBox txtFile;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.CheckBox checkHide;
+        private System.Windows.Forms.CheckBox checkAutoRestart;
     }
 }

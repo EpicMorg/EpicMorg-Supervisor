@@ -171,8 +171,7 @@
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(896, 24);
             this.menuStrip.TabIndex = 4;
-            this.menuStrip.Text = "menuStrip1";
-            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.menuStrip.Text = "menuStrip";
             // 
             // menuFile
             // 
@@ -238,6 +237,7 @@
             this.smenuExit.Name = "smenuExit";
             this.smenuExit.Size = new System.Drawing.Size(156, 22);
             this.smenuExit.Text = "Выход";
+            this.smenuExit.Click += new System.EventHandler(this.smenuExit_Click);
             // 
             // menuHelp
             // 
@@ -324,14 +324,14 @@
             this.cmUnlock.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.unlockToolStripMenuItem});
             this.cmUnlock.Name = "cmUnlock";
-            this.cmUnlock.Size = new System.Drawing.Size(112, 26);
+            this.cmUnlock.Size = new System.Drawing.Size(153, 48);
             // 
             // unlockToolStripMenuItem
             // 
             this.unlockToolStripMenuItem.Image = global::EMSV.CL.UI.Properties.Resources.lock_key;
             this.unlockToolStripMenuItem.Name = "unlockToolStripMenuItem";
-            this.unlockToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.unlockToolStripMenuItem.Text = "Unlock";
+            this.unlockToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unlockToolStripMenuItem.Text = "Unlock item";
             this.unlockToolStripMenuItem.Click += new System.EventHandler(this.unlockToolStripMenuItem_Click);
             // 
             // FrmMain

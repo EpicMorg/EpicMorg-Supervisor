@@ -91,6 +91,7 @@
             this.Controls.Add(this.txtPasswordRetype);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.txtPasswordOriginal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -22,9 +22,10 @@ namespace EMSV.CL.UI.UI
             }
         }
 
-        public string Password => textBox1.Text;
+        public string Password => mtxtPassword.Text;
         public frmUnlock() {
             InitializeComponent();
         }
+
     }
 }
