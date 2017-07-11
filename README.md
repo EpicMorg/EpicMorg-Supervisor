@@ -1,4 +1,6 @@
 # Supervisor
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Tool for run and handle any process. With local and remote controll.
 
 **This is dev-version! Please, do not use at production!**
