@@ -13,6 +13,8 @@ Tool for run and handle any process. With local and remote controll.
 * Set up your server via local Admin Panel. Add itmes, set it up, etc.
 * Done!
 
+<blockquote>**Warning!** Admin panel is still unstable via remote connection! Be carefull.</blockquote>
+
 ### Remote control from Client-panel
 If you want remote control follow this steps:
 * open port on your gate\firewall
