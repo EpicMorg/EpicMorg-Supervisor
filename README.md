@@ -8,6 +8,11 @@ Tool for run and handle any process. With local and remote controll.
 ## Requerments
 * Windows with support [.Net 4.7](https://www.microsoft.com/en-US/download/details.aspx?id=55167) (Windows 7 SP1+)
 
+## Threads and discussions:
+* [issues](https://github.com/EpicMorg/EpicMorg-Supervisor/issues)
+* https://neugomon.ru/threads/491/
+* -
+
 ## How to
 ### First steps
 * Manyally install copy of server as windows-service.
