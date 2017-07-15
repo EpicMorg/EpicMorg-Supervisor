@@ -1,0 +1,9 @@
+﻿<Application x:Class="EMSV.ABOUT.SHARED.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EMSV.ABOUT.SHARED"
+             StartupUri="UI/FrmAboutWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
